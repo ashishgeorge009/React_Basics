@@ -6,8 +6,8 @@ let myObj = {
     },
     job: "Software Developer"
 }
-let obj2 = {...myObj}; // spread operator for objects
-let obj3 = {...myObj, add: {...obj2.add}} // spread operator for object inside Object
+let obj2 = {...myObj}; // spread operator for objects - SHALLOW COPY
+let obj3 = {...myObj, add: {...obj2.add}} // spread operator for object inside Object - //DEEP COPY
 
 obj2.name = "ashish2"
 obj2.add.city = "Toronto"
